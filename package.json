@@ -1,0 +1,39 @@
+{
+  "name": "learn-data",
+  "version": "1.2.9",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress-webpack dev docs",
+    "docs:build": "vuepress-webpack build docs",
+    "docs:clean-dev": "vuepress-webpack dev docs --clean-cache",
+    "docs:update-package": "pnpm dlx vp-update",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --check --write .",
+    "lint:markdown": "markdownlint docs",
+    "lint:markdown-fix": "markdownlint docs --fix"
+  },
+  "dependencies": {
+    "@vuepress/bundler-webpack": "2.0.0-rc.2",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.1",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.1",
+    "vue": "^3.4.15",
+    "vuepress": "2.0.0-rc.2",
+    "vuepress-plugin-feed2": "2.0.0-rc.16",
+    "vuepress-plugin-search-pro": "2.0.0-rc.16",
+    "vuepress-theme-hope": "2.0.0-rc.16"
+  },
+  "devDependencies": {
+    "@waline/client": "3.0.0-alpha.11",
+    "cpx2": "^7.0.1",
+    "markdownlint-cli": "^0.38.0",
+    "prettier": "^3.2.4",
+    "mathjax-full": "^3.2.2",
+    "sass-loader": "^14.0.0",
+    "vidstack": "^1.9.8"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.16.0"
+  }
+}
